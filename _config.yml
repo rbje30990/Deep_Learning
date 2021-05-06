@@ -36,11 +36,6 @@ url: "https://rbje30990.github.io" # the base hostname & protocol for your site,
 #
 baseurl: "/Deep_Learning" # the subpath of your site, e.g. "/blog".
 
-# Github and twitter are optional:
-minima:
-  social_links:
-    twitter: fastdotai
-    github: fastai
 
 # Set this to true to get LaTeX math equation support
 use_math: 
