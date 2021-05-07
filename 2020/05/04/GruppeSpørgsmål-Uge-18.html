@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Gruppespørgsmål Uge 18 | AI/Machine Learning</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Gruppespørgsmål Uge 18" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write the Python code to implement ReLU." />
+<meta property="og:description" content="Write the Python code to implement ReLU." />
+<link rel="canonical" href="https://rbje30990.github.io/Deep_Learning/2020/05/04/GruppeSp%C3%B8rgsm%C3%A5l-Uge-18.html" />
+<meta property="og:url" content="https://rbje30990.github.io/Deep_Learning/2020/05/04/GruppeSp%C3%B8rgsm%C3%A5l-Uge-18.html" />
+<meta property="og:site_name" content="AI/Machine Learning" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-04T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://rbje30990.github.io/Deep_Learning/2020/05/04/GruppeSp%C3%B8rgsm%C3%A5l-Uge-18.html","@type":"BlogPosting","headline":"Gruppespørgsmål Uge 18","dateModified":"2020-05-04T00:00:00-05:00","datePublished":"2020-05-04T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rbje30990.github.io/Deep_Learning/2020/05/04/GruppeSp%C3%B8rgsm%C3%A5l-Uge-18.html"},"description":"Write the Python code to implement ReLU.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Deep_Learning/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rbje30990.github.io/Deep_Learning/feed.xml" title="AI/Machine Learning" /><link rel="shortcut icon" type="image/x-icon" href="/Deep_Learning/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Deep_Learning/">AI/Machine Learning</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Deep_Learning/about/">About Me</a><a class="page-link" href="/Deep_Learning/search/">Search</a><a class="page-link" href="/Deep_Learning/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Gruppespørgsmål Uge 18</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-05-04T00:00:00-05:00" itemprop="datePublished">
+        May 4, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ol>
+  <li><strong>Write the Python code to implement ReLU.</strong></li>
+</ol>
+
+<p>if a &gt; 0: return a else: return 0</p>
+
+<ol>
+  <li><strong>What is the “hidden size” of a layer?</strong></li>
+</ol>
+
+<p>Repræsenterer antallet af neuroner i hvert lag i de skjulte lag.</p>
+
+<ol>
+  <li><strong>What does the t method do in PyTorch?</strong></li>
+</ol>
+
+<p>Transpose</p>
+
+<ol>
+  <li><strong>Why is matrix multiplication written in plain Python very slow?</strong></li>
+</ol>
+
+<p>For loops for daaays</p>
+
+<p>Pytorch bruger C++ frem for Python, da Python er et langsomt sprog.</p>
+
+<ol>
+  <li><strong>In matmul, why is ac==br?</strong></li>
+</ol>
+
+<p>Der er to matricer. Førset matrices kolonner (output?) skal være samme størrelse som anden matrices rækker (Input?)</p>
+
+<p>og hvorfor? måske fordi det ellers ikke virker?</p>
+
+<ol>
+  <li><strong>In Jupyter Notebook, how do you measure the time taken for a single cell to execute?</strong></li>
+</ol>
+
+<p>%time</p>
+
+<ol>
+  <li><strong>What is “elementwise arithmetic”?</strong></li>
+</ol>
+
+<p>basis operationer bliver lavet for hvert enkelt element hvis begge tensor har samme shape.</p>
+
+<p>Virker kun med samem shape, eller når de er broadcastable</p>
+
+<ol>
+  <li><strong>Write the PyTorch code to test whether every element of a is greater than the corresponding element of b.</strong></li>
+</ol>
+
+<p>(a &gt; b).all()</p>
+
+<ol>
+  <li><strong>What is a rank-0 tensor? How do you convert it to a plain Python data type?</strong></li>
+</ol>
+
+<p>sum() og mean() er en reducerings operationer, som retunerer tensors med kun et element, som kunne være en boolean eller et nummer. Hvis man vil konventere det til plain python, skal man kalde på funktionen .item</p>
+
+<p>(a + b).mean().item()</p>
+
+<ol>
+  <li><strong>What does this return, and why? tensor([1,2]) + tensor([1])</strong></li>
+</ol>
+
+<p>Det retunerer: tensor([2,3]) da de er broadcastable og dermed bliver denne tensor på højre side lavet større.</p>
+
+<ol>
+  <li><strong>What does this return, and why? tensor([1,2]) + tensor([1,2,3])</strong></li>
+</ol>
+
+<p>RuntimeError, da de ikke har samme størrelse og ikke er broadcastable</p>
+
+<ol>
+  <li><strong>How does elementwise arithmetic help us speed up matmul?</strong></li>
+</ol>
+
+<p>Vi kan slette et loop ved at gange noget med noget andet</p>
+
+<p>I Stedet for at lave den sidste operation manuelt med loop nummer 3, hvor vi tager hvert element af de to tensor og ganger det ene med det andet, gør vi brug af elementwise arithmetic, som laver præcis det internt. Derfor kan der slettes et loop</p>
+
+<p>Black magic og matematik!</p>
+
+<ol>
+  <li><strong>What are the broadcasting rules?</strong></li>
+</ol>
+
+<p>PyTorch sammenligner formen af elementer. Starter med at bruge <em>trailing dimensions</em> og arbejder baglæns. 2 dimensioner er kompatible når:</p>
+
+<ol>
+  <li>
+    <p>De er lige (ens)</p>
+  </li>
+  <li>
+    <p>En af dem er 1, hvor i det tilfælde den dimension er broadcast til at være det samme som den anden.</p>
+  </li>
+</ol>
+
+<!-- end list -->
+
+<ol>
+  <li><strong>What is expand_as? Show an example of how it can be used to match the results of broadcasting.</strong></li>
+</ol>
+
+<p><img src="https://rbje30990.github.io/Deep_Learning/assets/img/2020-05-04-GruppeSpørgsmål-Uge-18/media/image1.png" alt="" /></p>
+
+<ol>
+  <li><strong>How does unsqueeze help us to solve certain broadcasting problems?</strong></li>
+</ol>
+
+<p>Det giver muligheden for at broadcaste i en anden dimension, altså kolonner i stedet for rækker.</p>
+
+<ol>
+  <li><strong>How do we show the actual contents of the memory used for a tensor?</strong></li>
+</ol>
+
+<p>tensor.storage()</p>
+
+<ol>
+  <li><strong>When adding a vector of size 3 to a matrix of size 3×3, are the elements of the vector added to each row or each column of the matrix? (Be sure to check your answer by running this code in a notebook.)</strong></li>
+</ol>
+
+<p>Ret sikker på at det er på rows</p>
+
+<ol>
+  <li><strong>Do broadcasting and expand_as result in increased memory use? Why or why not?</strong></li>
+</ol>
+
+<p>Nej fordi at selve broadcastet ikke gemmes i en tensor i hukommelsen.</p>
+
+<ol>
+  <li><strong>What are the forward pass and backward pass of a neural network?</strong></li>
+</ol>
+
+<p>Forward pass: Udregningen. Værdi af output fra input, udregner fra første neuron til sidste. Det er modellens gæt</p>
+
+<p>Backward pass: Udregner forandring i vægtene using gradient descent. Backpropagation. Det er modellens forsøg i at blive klogere</p>
+
+<ol>
+  <li><strong>Why do we need to store some of the activations calculated for intermediate layers in the forward pass?</strong></li>
+</ol>
+
+<p>Således at backward pass kan finde activation function</p>
+
+<ol>
+  <li><strong>What is the downside of having activations with a standard deviation too far away from 1?</strong></li>
+</ol>
+
+<p>Activations ender enten med at blive nan eller 0</p>
+
+<ol>
+  <li><strong>How can weight initialization help avoid this problem?</strong></li>
+</ol>
+
+<p>Ved at holde standard deviation af activations på 1, så man får brugbare tal.</p>
+
+<ol>
+  <li><strong>What is the formula to initialize weights such that we get a standard deviation of 1 for a plain linear layer, and for a linear layer followed by ReLU?</strong></li>
+</ol>
+
+<p>Linear: 1/kvadrat rod(n_in).</p>
+
+<p>Med ReLU: 2/nin</p>
+
+<ol>
+  <li><strong>Why do we sometimes have to use the squeeze method in loss functions?</strong></li>
+</ol>
+
+<p>For at fjerne dimensioner med en længde af 1. Altså er det en metode til at reshape en tensor.</p>
+
+<ol>
+  <li><strong>In what order do we need to call the *_grad functions in the backward pass? Why?</strong></li>
+</ol>
+
+<p>mse, relu, lin</p>
+
+<p>because chain rule</p>
+
+<ol>
+  <li><strong>What is __call__?</strong></li>
+</ol>
+
+<p>Indbygget Python metode. Gør at man kan skrive klasser hvor instansen er en metode og kan blive kaldt som en metode</p>
+
+<ol>
+  <li><strong>If you are mathematically inclined, find out what the gradients of a linear layer are in mathematical notation. Map that to the implementation we saw in this chapter.</strong></li>
+</ol>
+
+<p>Det er vi ikke.</p>
+
+<ol>
+  <li><strong>Implement everything in this chapter using NumPy instead of PyTorch…</strong></li>
+</ol>
+
+<p>Boi, We have no time!</p>
+
+  </div><a class="u-url" href="/Deep_Learning/2020/05/04/GruppeSp%C3%B8rgsm%C3%A5l-Uge-18.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Deep_Learning/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/Deep_Learning/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Deep_Learning/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
