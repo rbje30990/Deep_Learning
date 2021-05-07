@@ -35,6 +35,17 @@
   
     
         ,"post3": {
+            "title": "Gruppespørgsmål Uge 8",
+            "content": "Explain how the “pixel similarity” approach to classifying digits works. | Der laves et tensor stack, hvor der tages et average af hvert pixel, som så sammenlignes med det ideelle billed af et 3- eller 7- tal . What is a list comprehension? | Syntax: list= [expression for item in iterable if condition] . En list comprehension er en kort måde at lave en liste på. . Eksempler: . Create one now that selects odd numbers from a list and doubles them. . double_odd = [double_numbers(i) for i in numbers if i%2 == 1] . What is a “rank-3 tensor”? | Det er en liste af rank-2 matrix . What are RMSE and L1 norm? | Root Mean Square Error : forskellene mellem værdier forudsagt af en model eller en estimator og de observerede værdier. . L1 norm : The L1 norm that is calculated as the sum of the absolute values of the vector. . Create a 3×3 tensor or array containing the numbers from 1 to 9. Double it. | Select the bottom-right four numbers. . What is broadcasting? | Det er sort magi der udvider tensor med end mindre rank til at matche den med en stør rank. . Are metrics generally calculated using the training set, or the validation set? | Validation . What is SGD? | Stochastic Gradient Descent : . Det er en optimizer der kan håndtere stor datasets idet den samler det i mini-batches . What are the seven steps in SGD for machine learning? . Init . | predict . | loss . | gradient . | step . | repeat? . | stop . | | How do we initialize the weights in a model? . | vi tager random værdier for at starte med, da det alligevel bliver tilpasset . What is “loss”? | loss is a number indicating how bad the model’s prediction was on a single epoch. If model prediction is perfect the loss is 0. . Why can’t we always use a high learning rate? | Med en for stor learning rate, laver vi for store steps, hvormed vi ikke kan komme til bedste værdier. Den skyder over målet . What is a “gradient”? | En gradient er værdien på et fald eller stigning fra et punkt på en graf. . “Gradient is denied as rise/run; that is, the change in the value of the function, divided by the change in the value of the parameter.” . Why can’t we use accuracy as a loss function? | accuracy er for mennesker . loss bliver brugt for modellen . What is the difference between a loss function and a metric? | loss er antallet af forkerte predictions, mens metric er optimeret for mennesker, det viser i % hvor højt scoren er i forhold til rigtige predictions . What is the function to calculate new weights using a learning rate? | w -= gradient(w) * lr . What does the backward method do? | backwards methoden laver backpropagation, som optimizer weights, og dermed “træner” modellen .",
+            "url": "https://rbje30990.github.io/Deep_Learning/2020/02/22/GruppeSp%C3%B8rgsm%C3%A5l-Uge-8.html",
+            "relUrl": "/2020/02/22/GruppeSp%C3%B8rgsm%C3%A5l-Uge-8.html",
+            "date": " • Feb 22, 2020"
+        }
+        
+    
+  
+    
+        ,"post4": {
             "title": "Welcome to Jekyll!",
             "content": "test test .",
             "url": "https://rbje30990.github.io/Deep_Learning/2020/02/02/besvarelser.html",
